@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Sans+Thai:wght@500&family=Share+Tech+Mono&display=swap');
+
+* {
+    /* font-family: 'Courgette', cursive; */
+    /* font-family: 'Noto Sans Thai', sans-serif; */
+    font-family: 'Share Tech Mono', monospace;
+}
+
+#board, .boardInfo { 
+    max-width: 500px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+#start, .boardInfo {
+    font-size: 25px;
+}
+
+#gameOver {
+    display: none;
+}
+
+.boardInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#start {
+    background-color: lightpink;
+    border: none;
+    color: black;
+}
+
+#scoreBoard {
+    display: inline-flex;
+}
+
+.square {
+    aspect-ratio: 1;
+}
+
+.emptySquare {
+    background-color: #45699e;
+}
+
+.snakeSquare {
+    background-color: #ccf47f;
+}
+
+.foodSquare {
+    background-color: #f35a65;
+}
